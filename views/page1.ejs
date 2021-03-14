@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta name='viewport' content='width = device-width'>
+    <title>
+      Learning
+    </title>
+  </head>
+  <body>
+    <%- include('./partials/navbar.ejs')%>
+    <div class='about content'>
+      <h2>About Us</h2>
+      <p>Hello thee, how are you?Hello there, how are you?Hello there, how are you?Hello there, how are you?Hello there, how are you?Hello there, how are you?Hello there, how are you?</p>
+    </div>
+    <div>
+      <% if(blogs.length > 0){ %>
+        <% blogs.forEach(blog => { %>
+          <a href='/blogs/<%= blog._id%>'>
+          <h1><%=blog.title%></h1>
+          <p><%=blog.body%></p>
+          </a>
+        <%})%>
+      <%}else{%>
+        <h1>No Blogs</h1>
+      <%}%>
+    </div>
+  </body>
+</html>

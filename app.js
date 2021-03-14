@@ -37,6 +37,12 @@ app.use(require('./routes/validationRoutes'))
 // })
 
 
+// The 404 - error Page -> This is a middleware
+// app.use((req, res) => {
+//   res.status(404).render('404page')
+// })
+
+
 // Extra pages
 /*app.get('/search-blog', (req, res) => {
   Blog.findOne({title: 'Blog 2'})

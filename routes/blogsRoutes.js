@@ -4,7 +4,6 @@ const express = require('express'),
       verify = require('../models/verifyToken')
 
 
-
 // blogs routes
 router.get('/postman-blogs', verify, (req, res) => {
   const blogs = Blog.find()

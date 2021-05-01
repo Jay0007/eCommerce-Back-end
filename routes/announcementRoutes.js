@@ -25,9 +25,9 @@ router.get('/postman-announcements', (req, res) => {
       .catch(err => {
         console.log(err)
       })
-  })
+    })
 
-  // router.get('/announcements/:id', (req, res) => {
+// router.get('/announcements/:id', (req, res) => {
 //   const id = req.params.id
 //   Announcement.findById(id)
 //     .then(result => {
